@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@media (max-width: 950px) {
+  }
+
+body{
+    font-family: 'Noto Sans', sans-serif, "fontello";
+    height: 150vh;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background-color: rgb(19, 19, 19);
+}
+a{
+    text-decoration: none;
+}
+ul{    
+    list-style-type: none;
+}
+nav{
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+.nav__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 40px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    font-weight: 100
+}
+.nav__content:last-child {
+    right: 0px;    
+}
+.nav__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 25px 40px 25px 40px;
+}
+.nav__content-list, 
+.nav__content-list2 {
+    padding-right: 1rem;
+    color: white;
+    cursor:pointer;
+}
+.nav__content-list{
+    transition: color 0.1s ease-in;
+}
+.nav__content-list:hover{
+    color: rgb(190, 190, 190);
+    cursor:pointer;
+}
+.nav__content-list:last-child{
+    padding-right: 0px;
+    padding-left:0px;
+    margin-left: 0px;
+
+}
+.scrolled{
+    opacity: 0.5;
+}
+.main__video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.video__gradation{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0));
+    position: fixed;
+    top:0;
+    height: 50px;
+    width: 100%;
+}
+.main__gradation { 
+    background-image: linear-gradient(to top,rgba(19,19,19,1),rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0px;
+    height: 400px;
+    width: 100%;
+}
+.main__video-text{
+    color: white;
+    padding-bottom: 40px;
+}
+.main__video-text-title{
+    font-size: 22px;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+.main__video-buttons {
+    padding-left:50px;
+    padding-right:50px;
+    position: absolute;
+    top: 200px;
+    z-index: 3;
+}
+.main__video-teaser-button{
+    background-color: rgba(61, 61, 61, 0.5);
+    border-radius: 3px;
+    border: none;
+    color: white;
+    padding: 10px 35px 10px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.main__video-list-button{ 
+    background-color: rgba(61, 61, 61, 0.5);
+    border-radius: 3px;
+    color: white;    
+    padding: 10px 35px 10px 35px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.main__video-teaser-button:hover,
+.main__video-list-button:hover{
+    color: rgba(61, 61, 61, 1);
+    background-color: white;
+}
+.main__video-text>img{
+    margin-left:-54px;
+    margin-bottom: 20px;
+}
+.main__video-buttons{
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+}
+.vidScrolled{
+    opacity: 0;
+}

@@ -1,0 +1,31 @@
+.main__contents {
+    top: 700px;
+    transition: transform 0.2s ease-in;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.main__contents:hover{
+    transform: translate3D(-90px,0,0);
+    margin-left:50px;
+}
+
+.main__contents-list {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);  
+    width: 100%;
+}
+.main__content {
+    background-color: green;
+    border: 1px solid white;
+    margin-left: 10px;
+    transition: transform 0.2s ease-in;
+    height: 150px;
+    transform-origin: center left;
+}
+.main__content:hover ~ .main__content {
+    transform: translate3D(135px,0,0);
+  }
+
+  .main__content:hover{
+    transform: scale(1.5);
+}

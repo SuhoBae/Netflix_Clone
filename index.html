@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Netflix Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link rel="stylesheet" href="../src2/fontello-da184213/fontello-da184213/css/fontello.css">
+    <link rel="stylesheet" href="../src2/videoControls.css">
+    <link rel="stylesheet" href="../src2/carouselSlider.css">
+</head>
+<body>
+    <nav class="nav"></nav> 
+            <div class="nav__contents">
+                    <div class="nav__content">
+                        <div class="nav__content-list"><img src="../src2/img/logo.png" height="80px" width="140px;"></div>
+                        <div class="nav__content-list">홈</div>
+                        <div class="nav__content-list">TV 프로그램</div>
+                        <div class="nav__content-list">영화</div>
+                        <div class="nav__content-list">최신 등록 콘텐츠</div>
+                        <div class="nav__content-list">내가 찜한 콘텐츠</div>
+                    </div>
+                    <div class="nav__content">
+                        <div class="nav__content-list2"><i class="icon-search"></i>검색</div>
+                        <div class="nav__content-list2"><i class="icon-bell-alt nav__content-list-bell"></i></div>
+                        <div class="nav__content-list2"><img src="../src2/img/profile.png" height="40px" width="40px"></div>
+                        <div class="nav__content-list2">Suho Bae</div>
+                        <div class="nav__content-list2"><i class="icon-down-dir"></i></div> 
+                    </div>
+            </div>
+    <main>
+     <div class="main__video">
+            <video id="vid__content" width="100%" height="100%" autoplay>
+                <source src="../src2/vid/Godzilla3.mp4">
+            </video>      
+            <div class="video__gradation"></div>
+            <div class="main__gradation"></div>
+            <div id="js-vid-Btn" class="main__video-buttons">
+                <div class="main__video-buttons-container">
+                        <div class="main__video-text">
+                                <img src="../src2/img/Godzilla_title.png"  width="450px">
+                                <h1 class="main__video-text-title">2월 19일에 시즌1 공개</h1>
+                                    <span>인류를 파괴하는 미지의 생명체들, 그들에게 인류는 질병이자 저주일 뿐이다.</span>   
+                            </div>  
+                        <a class="main__video-teaser-button" href="https://www.youtube.com/watch?v=wVDtmouV9kM&t=14s" target="_blank">▶ 예고편</a>
+                        <a class="main__video-list-button">+ 내 동영상 목록</a>               
+                </div>
+                
+              
+            </div>   
+            <div  id="js-main__video-controls" class="main__video-controls">                    
+                <div class="main__video-buttons-container2">
+                <button id="main__video-playPauseBtn" class="main__video-playPauseBtn"><i class="icon-pause"></i></button>
+                <button id="main__video-muteBtn" class="main__video-muteBtn"><i class="icon-volume-up"></i></button>
+                </div>
+            </div>
+        
+    </div>  
+    <div id="main__contents" class="main__contents">
+        <div class="main__contents-list">
+            <div class="main__content"></div>
+            <div class="main__content"></div>
+            <div class="main__content"></div>
+            <div class="main__content"></div>
+            <div class="main__content"></div>
+        </div>        
+    </div>    
+
+    </main>
+    
+    <script src="index.js"></script>
+    <script src="videoControls.js"></script>
+</body>
+</html>
